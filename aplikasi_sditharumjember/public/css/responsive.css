@@ -1,0 +1,122 @@
+/* .menghilang{
+    display: none;
+} */
+
+@media (min-width: 1400px) { 
+    .menghilang{
+        display: block;
+    }
+ }
+
+ .footer-content{
+    margin-top: 100px !important;
+ }
+
+ @media (min-width: 800px) { 
+    .footer-content{
+        margin-top: 0px !important;
+    }
+    .halaman{
+        /* margin-left:350px !important; */
+        margin: auto !important;
+    }
+    .bantuan{
+        display:none;
+    }
+ }
+
+@media (max-width: 600px){
+    .dataTables_filter{
+       width: 50%;
+   }
+   .misi{
+    margin-left: 0px !important;
+   }
+   .comparison{
+      overflow: auto;
+      white-space: nowrap;
+      /* width: 100px;
+      padding:10px; 
+      height:400px; */
+      float: left;
+   }
+   .guide{
+    display:none;
+   }
+   /* li.paginate_button.previous {
+        display: inline;
+    }
+ 
+    li.paginate_button.next {
+        display: inline;
+    }
+ 
+    li.paginate_button {
+        display: none;
+    } */
+}
+.penilaian{
+    width: 300px;
+   }
+
+
+.dtr-title{
+    margin-left:-30px;
+    margin-bottom:10px;
+    margin-right:5px;
+}
+.dtr-data{
+    text-indent:30px;
+}
+
+blockquote {
+
+    max-width: 500px;
+   
+    margin: 0;
+   
+    width: 100%;
+   
+    padding: 40px 70px;
+   
+    background: ;
+   
+       color: ; 
+   
+    position: relative;
+   
+   }
+   
+   blockquote::before,
+   
+   blockquote::after {
+   
+    font-size: 350%;
+   
+    font-family: arial;
+   
+    display:block;
+   
+    position: absolute;
+   
+   }
+   
+   blockquote::before {
+   
+    content: open-quote;
+   
+    left: 30px;
+   
+       line-height: 40px;
+   
+   }
+   
+   blockquote::after {
+   
+    content: close-quote;
+   
+    right: 30px;
+   
+       line-height: 30px;
+   
+   }
