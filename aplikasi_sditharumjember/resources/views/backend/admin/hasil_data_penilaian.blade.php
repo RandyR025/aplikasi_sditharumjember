@@ -91,7 +91,7 @@ Penilaian
 
 <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 row-cols-xxl-5 g-4">
     @foreach ($penilaian as $item)
-    <div class="col penilaian">
+    <div class="col penilaian" style="width: 300px;">
         <div class="card h-100">
             @if($item->image == null)
             <img src="{{asset('public/backend/img/background/sekolah2.jpeg')}}" class="card-img-top sh-25" alt="card image">
@@ -101,7 +101,9 @@ Penilaian
             <div class="card-body">
                 <h5 class="heading mb-2">
                     <a href="Quiz.Detail.html" class="body-link">
-                        <span class="clamp-line sh-6 lh-1-5" data-line="2">{{$item->nama_penilaian}}</span>
+                        <?php $bulan =  date('F', strtotime($item->tanggal));
+                        $tahun =  date('Y', strtotime($item->tanggal)); ?>
+                        <span class="clamp-line" data-line="5">{{$item->nama_penilaian}} Bulan {{$bulan}} {{$tahun}}</span>
                     </a>
                 </h5>
                 <!-- <div class="mb-3 text-muted sh-8 clamp-line" data-line="3">

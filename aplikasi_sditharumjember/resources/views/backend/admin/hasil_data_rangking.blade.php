@@ -90,9 +90,9 @@ Penilaian
 </form>
 
 <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 row-cols-xxl-5 g-4">
-@foreach ($penilaian as $item)
-@if(isset($item->id_penilaian))
-    <div class="col penilaian">
+    @foreach ($penilaian as $item)
+    @if(isset($item->id_penilaian))
+    <div class="col penilaian" style="width: 300px;">
         <div class="card h-100">
             @if($item->image == null)
             <img src="{{asset('public/backend/img/background/sekolah2.jpeg')}}" class="card-img-top sh-25" alt="card image">
@@ -102,7 +102,9 @@ Penilaian
             <div class="card-body">
                 <h5 class="heading mb-2">
                     <a href="Quiz.Detail.html" class="body-link">
-                        <span class="clamp-line sh-6 lh-1-5" data-line="2">{{$item->nama_penilaian}}</span>
+                        <?php $bulan =  date('F', strtotime($item->tanggal)); 
+                        $tahun =  date('Y', strtotime($item->tanggal));?>
+                        <span class="clamp-line" data-line="5">{{$item->nama_penilaian}} Bulan {{$bulan}} {{$tahun}}</span>
                     </a>
                 </h5>
                 <!-- <div class="mb-3 text-muted sh-8 clamp-line" data-line="3">
@@ -149,24 +151,24 @@ Penilaian
                         </div>
                     </div>
                 </div> -->
- 
+
                 <div class="d-flex flex-row justify-content-between w-100 w-sm-50 w-xl-100 mb-3">
-                        <a href="{{ route('hasilrangkingpenilaianwali',[$item->id_penilaian, $item->id]) }}" class="btn btn-outline-primary w-100 me-1 btn-sm">Rangking Wali</a> 
+                    <a href="{{ route('hasilrangkingpenilaianwali',[$item->id_penilaian, $item->id]) }}" class="btn btn-outline-primary w-100 me-1 btn-sm">Rangking Wali</a>
                 </div>
                 <div class="d-flex flex-row justify-content-between w-100 w-sm-50 w-xl-100">
-                        <a href="{{ route('hasilrangkingpenilaian',[$item->id_penilaian, $item->id]) }}" class="btn btn-outline-primary w-100 me-1 btn-sm">Rangking Guru</a>
+                    <a href="{{ route('hasilrangkingpenilaian',[$item->id_penilaian, $item->id]) }}" class="btn btn-outline-primary w-100 me-1 btn-sm">Rangking Guru</a>
                 </div>
             </div>
         </div>
     </div>
     @endif
-@endforeach
+    @endforeach
 </div>
 
 <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
 <!-- <script src="{{asset('backend/js/vendor/jquery-3.5.1.min.js')}}"></script> -->
 <!-- <script src="cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script> -->
 <script src="{{asset('public/js/Guru.js')}}">
-// <script src = "//cdn.jsdelivr.net/npm/sweetalert2@11" >
+    // <script src = "//cdn.jsdelivr.net/npm/sweetalert2@11" >
 </script>
 @endsection
