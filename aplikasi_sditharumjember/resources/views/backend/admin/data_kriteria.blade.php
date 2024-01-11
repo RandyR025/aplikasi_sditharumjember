@@ -75,7 +75,7 @@ Kelola Data
             <button value="{{$data->kode_kriteria}}" class="btn btn-icon btn-icon-only btn-outline-secondary mb-1 delete_kriteria" type="button" data-bs-toggle="tooltip" data-bs-placement="top" titte data-bs-original-title="Hapus">
             <i class="fa-solid fa-trash-can"></i>
             </button>
-            <a href="/show-subkriteria/{{$data->kode_kriteria}}" value="{{$data->kode_kriteria}}" class="btn btn-icon btn-icon-only btn-outline-secondary mb-1 view_kriteria" data-bs-toggle="tooltip" data-bs-placement="top" titte data-bs-original-title="View">
+            <a href="/aplikasi_sditharumjember/show-subkriteria/{{$data->kode_kriteria}}" value="{{$data->kode_kriteria}}" class="btn btn-icon btn-icon-only btn-outline-secondary mb-1 view_kriteria" data-bs-toggle="tooltip" data-bs-placement="top" titte data-bs-original-title="View">
             <i class="fa-regular fa-eye"></i>
             </a>
           </td>

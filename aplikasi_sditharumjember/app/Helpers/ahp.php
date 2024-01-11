@@ -293,7 +293,7 @@ function showTabelPerbandingan($jenis, $kriteria)
             </div>
         </div>
     </div>
-    <form class="ui form" action="/perbandinganproses" method="post">
+    <form class="ui form" action="/aplikasi_sditharumjember/perbandinganproses" method="post">
     <input type="hidden" name="_token" value="<?php echo csrf_token();?>">
     <div class="row">
 
@@ -401,7 +401,7 @@ function showTabelSubPerbandingan($jenis, $kriteria, $id)
             </div>
         </div>
     </div>
-    <form class="ui form" action="/subperbandinganproses" method="post">
+    <form class="ui form" action="/aplikasi_sditharumjember/subperbandinganproses" method="post">
     <input type="hidden" name="_token" value="<?php echo csrf_token();?>">
     <div class="row">
         <div class="col comparison">

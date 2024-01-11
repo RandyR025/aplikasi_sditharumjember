@@ -85,7 +85,7 @@ Kelola Data
             <button value="{{ $data->kode_pengisian }}" class="btn btn-icon btn-icon-only btn-outline-secondary mb-1 delete_pengisian" type="button" data-bs-toggle="tooltip" data-bs-placement="top" titte data-bs-original-title="Hapus">
             <i class="fa-solid fa-trash-can"></i>
             </button>
-          <a href="/show-pilihan/{{ $data->kode_pengisian }}" value="{{ $data->kode_pengisian }}" class="btn btn-icon btn-icon-only btn-outline-secondary mb-1 view_pengisian" data-bs-toggle="tooltip" data-bs-placement="top" titte data-bs-original-title="View">
+          <a href="/aplikasi_sditharumjember/show-pilihan/{{ $data->kode_pengisian }}" value="{{ $data->kode_pengisian }}" class="btn btn-icon btn-icon-only btn-outline-secondary mb-1 view_pengisian" data-bs-toggle="tooltip" data-bs-placement="top" titte data-bs-original-title="View">
             <i class="fa-solid fa-list"></i>
           </a>
           </td>

@@ -49,8 +49,8 @@
   <!-- Vendor Styles End -->
   <!-- Template Base Styles Start -->
   <link rel="stylesheet" href="{{asset('public/backend/css/styles.css')}}" />
-  <link rel="stylesheet" href="{{asset('css/datatable.css')}}" />
-  <link rel="stylesheet" href="{{asset('css/responsive.css')}}" />
+  <link rel="stylesheet" href="{{asset('public/css/datatable.css')}}" />
+  <link rel="stylesheet" href="{{asset('public/css/responsive.css')}}" />
 
   <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.bootstrap.min.css"> -->
   <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css"> -->

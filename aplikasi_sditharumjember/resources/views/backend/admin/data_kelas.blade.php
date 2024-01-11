@@ -75,7 +75,7 @@ Kelola Data
             <button value="{{$data->kode_kelas}}" class="btn btn-icon btn-icon-only btn-outline-secondary mb-1 delete_kelas" type="button" data-bs-toggle="tooltip" data-bs-placement="top" titte data-bs-original-title="Hapus">
             <i class="fa-solid fa-trash-can"></i>
             </button>
-            <a href="/show-kelas/{{$data->kode_kelas}}" value="{{$data->kode_kelas}}" class="btn btn-icon btn-icon-only btn-outline-secondary mb-1 view_kelas" data-bs-toggle="tooltip" data-bs-placement="top" titte data-bs-original-title="View">
+            <a href="/aplikasi_sditharumjember/show-kelas/{{$data->kode_kelas}}" value="{{$data->kode_kelas}}" class="btn btn-icon btn-icon-only btn-outline-secondary mb-1 view_kelas" data-bs-toggle="tooltip" data-bs-placement="top" titte data-bs-original-title="View">
             <i class="fa-regular fa-eye"></i>
             </a>
           </td>
